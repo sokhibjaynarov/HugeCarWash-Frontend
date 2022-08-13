@@ -1,16 +1,17 @@
 {
-  "name": "summaries",
+  "name": "hugecarwash",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "prestart": "node aspnetcore-https",
-    "start": "run-script-os",
+    "start": "node server.js",
     "start:windows": "ng serve --port 44413 --ssl --ssl-cert %APPDATA%\\ASP.NET\\https\\%npm_package_name%.pem --ssl-key %APPDATA%\\ASP.NET\\https\\%npm_package_name%.key",
     "start:default": "ng serve --port 44413 --ssl --ssl-cert $HOME/.aspnet/https/${npm_package_name}.pem --ssl-key $HOME/.aspnet/https/${npm_package_name}.key",
     "build": "ng build",
-    "build:ssr": "ng run Summaries:server:dev",
+    "build:ssr": "ng run Hugecarwash:server:dev",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "heroku-postbuild": "ng build --prod"
   },
   "private": true,
   "dependencies": {
@@ -27,6 +28,7 @@
     "@angular/router": "~13.1.1",
     "angular-ng-autocomplete": "^2.0.12",
     "bootstrap": "^5.1.3",
+    "express": "^4.18.1",
     "jquery": "^3.6.0",
     "ngx-toastr": "^14.3.0",
     "oidc-client": "^1.11.5",

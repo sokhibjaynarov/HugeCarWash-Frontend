@@ -9,7 +9,7 @@ import { IEmployee } from 'src/app/interfaces/employee';
 })
 export class EmployeeService {
 
-  _baseUrl = 'https://localhost:5001/api/employees';
+  _baseUrl = 'https://hugecarwash-api.herokuapp.com/api/employees';
 
   constructor( private http: HttpClient) { }
 

@@ -16,6 +16,7 @@ export class ClientsComponent implements OnInit {
 
   async ngOnInit(): Promise<void> {
     this.clients = await this.service.getClients();
+    console.log(this.clients);
   }
 
   showClient(id: string): void {

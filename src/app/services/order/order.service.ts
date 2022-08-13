@@ -9,7 +9,7 @@ import { IOrder, IOrderDto } from 'src/app/interfaces/order';
 })
 export class OrderService {
 
-  _baseUrl = 'https://localhost:5001/api/orders';
+  _baseUrl = 'https://hugecarwash-api.herokuapp.com/api/orders';
 
   constructor( private http: HttpClient) { }
 

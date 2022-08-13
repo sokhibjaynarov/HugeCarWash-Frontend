@@ -9,7 +9,7 @@ import { Client, IClient } from '../../interfaces/client';
 })
 export class ClientService {
 
-  _baseUrl: string = "https://localhost:5001/api/Users";
+  _baseUrl: string = "https://hugecarwash-api.herokuapp.com/api/Users";
   constructor( private http: HttpClient) { }
 
   // async getClients() : Promise<Observable<IClient[]>> {
